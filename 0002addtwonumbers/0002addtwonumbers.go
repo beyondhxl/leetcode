@@ -18,7 +18,7 @@
 
 */
 
-package problem007
+package problem0002
 
 type ListNode struct {
 	Val  int
