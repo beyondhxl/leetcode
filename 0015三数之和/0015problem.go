@@ -53,14 +53,10 @@ func threeSum(nums []int) [][]int {
 				res = append(res, []int{nums[i], nums[l], nums[r]})
 				// 去重
 				for l < r && nums[l] == nums[r] {
-					if nums[l] == nums[l+1] {
-						l++
-					}
+					l++
 				}
 				for l < r && nums[r] == nums[r-1] {
-					if nums[r] == nums[r-1] {
-						r--
-					}
+					r--
 				}
 				l++
 				r--
