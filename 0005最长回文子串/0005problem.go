@@ -46,7 +46,7 @@ func longestPalindrome(s string) string {
 		// 如果有与中间字符相同的字符，则继续向右边扩展
 		for end < len(s)-1 && s[end+1] == s[end] {
 			end++
-			// 循环结束后，s[b:e+1]是一串相同的字符
+			// 循环结束后，s[beg:end+1]是一串相同的字符
 		}
 
 		// 下一次循环，下一个回文的正中间字符串的首字符是s[end+1]
@@ -55,7 +55,7 @@ func longestPalindrome(s string) string {
 		for end < len(s)-1 && beg > 0 && s[end+1] == s[beg-1] {
 			end++
 			beg--
-			// 循环结束后，s[b:e+1]就是找到的最大的回文字符串
+			// 循环结束后，s[beg:end+1]就是找到的最大的回文字符串
 		}
 
 		newlen := end + 1 - beg
