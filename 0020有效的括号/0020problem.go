@@ -41,7 +41,7 @@ func isValid(s string) bool {
 	}
 
 	slen := len(s)
-	chstack := make([]byte, slen)
+	chstack := make([]byte, slen) //
 	top := 0
 
 	for i := 0; i < slen; i++ {
