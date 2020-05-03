@@ -86,7 +86,7 @@ func reverseKGroup1(head *ListNode, k int) *ListNode {
 		if count == k {
 			count = 0
 			move = true
-			left.Next = reverse(left.Next, k)
+			left.Next = reverse1(left.Next, k)
 		}
 		right = right.Next
 		count++
@@ -95,7 +95,7 @@ func reverseKGroup1(head *ListNode, k int) *ListNode {
 		}
 	}
 	if count == k {
-		left.Next = reverse(left.Next, k)
+		left.Next = reverse1(left.Next, k)
 	}
 	return dummy.Next
 }
