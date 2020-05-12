@@ -1,2 +1,2 @@
-# leetcode
-some leetcode solution in golang 个人刷题笔记
+## leetcode
+some leetcode solution in golang 刷题笔记
